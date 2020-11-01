@@ -6,17 +6,37 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Agafitei_Iulian_lab2.Models;
+using Microsoft.EntityFrameworkCore;
+using Agafitei_Iulian_lab2.Data;
+using Agafitei_Iulian_lab2.Models.LibraryViewModels;
 
 namespace Agafitei_Iulian_lab2.Controllers
 {
     public class HomeController : Controller
     {
+
+        public async Task<ActionResult> Statistics()
+        {
+            IQueryable<OrderGroup> data =
+            from order in _context.Orders
+            group order by order.OrderDate into dateGroup
+            select new OrderGroup()
+            {
+                OrderDate = dateGroup.Key,
+                BookCount = dateGroup.Count()
+            };
+            return View(await data.AsNoTracking().ToListAsync());
+        }
+
+        private readonly LibraryContext _context;
+        public HomeController(LibraryContext context)
+        {
+            _context = context;
+        }
+
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+        
 
         public IActionResult Index()
         {
