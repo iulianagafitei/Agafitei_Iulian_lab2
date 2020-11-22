@@ -5,10 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Agafitei_Iulian_lab2.Models;
+//using Agafitei_Iulian_lab2.Models;
+//using Agafitei_Iulian_lab2.Data;
 using Microsoft.EntityFrameworkCore;
-using Agafitei_Iulian_lab2.Data;
 using Agafitei_Iulian_lab2.Models.LibraryViewModels;
+using LibraryModel.Data;
+using LibraryModel.Models;
+
 
 namespace Agafitei_Iulian_lab2.Controllers
 {

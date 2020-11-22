@@ -1,4 +1,4 @@
-using Agafitei_Iulian_lab2.Data;
+//using Agafitei_Iulian_lab2.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using LibraryModel.Data;
 
 namespace Agafitei_Iulian_lab2
 {

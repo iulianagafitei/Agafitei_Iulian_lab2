@@ -1,5 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
-using Agafitei_Iulian_lab2.Data;
+//using Agafitei_Iulian_lab2.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using LibraryModel.Data;
 
 namespace Agafitei_Iulian_lab2
 {

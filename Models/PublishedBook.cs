@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Agafitei_Iulian_lab2.Models
+namespace LibraryModel.Models
 {
     public class PublishedBook
     {

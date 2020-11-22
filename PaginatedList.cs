@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+
 namespace Agafitei_Iulian_lab2
 {
     public class PaginatedList<T> : List<T>
