@@ -58,7 +58,7 @@ namespace Agafitei_Iulian_lab2
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapHub<ChatHub>("/chathub");
+                endpoints.MapHub<chatHub>("/chatHub");
             });
         }
     }

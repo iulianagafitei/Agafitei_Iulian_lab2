@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.SignalR;
 
 namespace Agafitei_Iulian_Lab2.Hubs
 {
-    public class ChatHub : Hub
+    public class chatHub : Hub
     {
         public async Task SendMessage(string user, string message)
         {
