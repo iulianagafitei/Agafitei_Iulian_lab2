@@ -36,11 +36,6 @@ namespace Agafitei_Iulian_lab2.Controllers
         {
             _context = context;
         }
-
-        private readonly ILogger<HomeController> _logger;
-
-        
-
         public IActionResult Index()
         {
             return View();
@@ -56,7 +51,7 @@ namespace Agafitei_Iulian_lab2.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        public IActionResult chat()
+        public IActionResult Chat()
         {
             return View();
         }
